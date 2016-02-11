@@ -25,5 +25,4 @@ Remember to use Test-Driven Development cycle:
 ## Commands
 
 * `npm install` to download dependencies
-* `npm run lint` to lint scripts
 * `npm test` to run tests

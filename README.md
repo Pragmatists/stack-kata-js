@@ -4,13 +4,13 @@ Stack Kata in JavaScript
 
 ## Task & rules
 
-You have to write stack implementation. The initial code is prepared in `src/stack.js` file.
+You have to write stack implementation. The initial code with tests is prepared in `src/stack.js` file.
 
 Rules:
 
 * Stack has three methods:
-    * `push(value)` puts given `value` ont the top of a stack and returns nothing,
-    * `pop()` removes value from the top of a stack and returns it,
+    * `push(element)` puts given `element` on the top of a stack and returns nothing,
+    * `pop()` removes element from the top of a stack and returns it,
     * `size()` returns number of elements on a stack.
 * Stack has given capacity which should be passed as a constructor parameter.
 * You cannot `pop` value from empty stack: `underflow` error should be thrown. 
@@ -19,7 +19,7 @@ Rules:
 Remember to use Test-Driven Development cycle:
  
 1. Write failing test.
-1. Write implementation which makes test passing.
+1. Write implementation which makes test pass.
 1. Refactor code.
 
 ## Commands

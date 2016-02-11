@@ -6,8 +6,8 @@ module.exports = function (config) {
             'src/**/*.js'
         ],
 
-        singleRun: true,
-        autoWatch: false,
+        singleRun: false,
+        autoWatch: true,
 
         logLevel: config.LOG_INFO,
 

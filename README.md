@@ -1,6 +1,7 @@
 # stack-kata-js
 
-Stack Kata in JavaScript
+Stack Kata in JavaScript inspired by
+ ["Specifics and Generics" post on "The Clean Coder" blog]( http://thecleancoder.blogspot.com/2010/11/craftsman-63-specifics-and-generics.html )
 
 ## Task & rules
 
@@ -26,3 +27,5 @@ Remember to use Test-Driven Development cycle:
 
 * `npm install` to download dependencies
 * `npm test` to run tests
+
+## 

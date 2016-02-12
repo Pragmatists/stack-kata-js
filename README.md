@@ -27,5 +27,3 @@ Remember to use Test-Driven Development cycle:
 
 * `npm install` to download dependencies
 * `npm test` to run tests
-
-## 

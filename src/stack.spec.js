@@ -48,5 +48,11 @@ describe('Stack', () => {
         expect(() => stack.pop()).toThrow('Stack underflow exception');
     });
 
+    it('should throw exception when full stack is pushed', () => {
+        stack = new Stack(1)
+        stack.push("elem")
+        expect(() => stack.push("elem")).toThrow('Stack overflow exception');
+    });
+
 
 });

@@ -16,18 +16,18 @@ describe('Stack', () => {
                 throw Error('Stack overflow exception')
             }
             this.size++
-            this.element = element 
+                this.element = element
         }
-        
-        
+
+
         pop() {
             if (this.isEmpty()) {
                 throw Error('Stack underflow exception')
             }
             this.size--
-            return this.element
+                return this.element
         }
-        
+
         isFull() {
             return this.size === this.capacity;
         }
@@ -40,7 +40,7 @@ describe('Stack', () => {
     let stack
 
     beforeEach(() => {
-        stack = new Stack()
+        stack = new Stack(10)
     });
 
     it('should be empty when created', () => {
@@ -73,5 +73,11 @@ describe('Stack', () => {
         expect(stack.pop()).toEqual("elem")
     });
 
+    it('should pop elements in reverse order', () => {
+        stack.push("1")
+        stack.push("2")
+        expect(stack.pop()).toEqual("2")
+        expect(stack.pop()).toEqual("1")
+    });
 
 });

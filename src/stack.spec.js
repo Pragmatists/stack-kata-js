@@ -2,7 +2,8 @@ describe('Stack', () => {
 
     class Stack {
 
-        constructor() {
+        constructor(capacity = 1) {
+            this.capacity = capacity
             this.size = 0
         }
 
@@ -11,6 +12,9 @@ describe('Stack', () => {
         }
 
         push() {
+            if (this.size === this.capacity) {
+                throw Error('Stack overflow exception')
+            }
             this.size++
         }
 

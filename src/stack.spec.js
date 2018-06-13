@@ -5,6 +5,7 @@ describe('Stack', () => {
         constructor(capacity = 1) {
             this.capacity = capacity
             this.size = 0
+            this.elements = []
         }
 
         getSize() {
@@ -16,16 +17,15 @@ describe('Stack', () => {
                 throw Error('Stack overflow exception')
             }
             this.size++
-                this.element = element
+            this.elements.push(element)
         }
 
 
         pop() {
             if (this.isEmpty()) {
                 throw Error('Stack underflow exception')
-            }
-            this.size--
-                return this.element
+            }            
+            return this.elements[--this.size]
         }
 
         isFull() {

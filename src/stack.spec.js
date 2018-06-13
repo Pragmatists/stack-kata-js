@@ -11,11 +11,12 @@ describe('Stack', () => {
             return this.size
         }
 
-        push() {
+        push(element) {
             if (this.isFull()) {
                 throw Error('Stack overflow exception')
             }
             this.size++
+            this.element = element 
         }
         
         
@@ -24,6 +25,7 @@ describe('Stack', () => {
                 throw Error('Stack underflow exception')
             }
             this.size--
+            return this.element
         }
         
         isFull() {

@@ -3,7 +3,7 @@ describe('Stack', () => {
     class Stack {
       
         getSize() {
-            return undefined
+            return 0
         }
 
     }

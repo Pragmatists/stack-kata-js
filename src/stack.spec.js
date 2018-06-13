@@ -41,5 +41,9 @@ describe('Stack', () => {
         expect(stack.getSize()).toEqual(0)
     });
 
+    it('should throw exception when empty stack is popped', () => {
+        expect(() => stack.pop()).toThrow('Stack underflow exception');
+    });
+
 
 });

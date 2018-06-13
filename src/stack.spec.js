@@ -66,5 +66,10 @@ describe('Stack', () => {
         expect(() => stack.push("elem")).toThrow('Stack overflow exception');
     });
 
+    it('should pop pushed element', () => {
+        stack.push("elem")
+        expect(stack.pop()).toEqual("elem")
+    });
+
 
 });

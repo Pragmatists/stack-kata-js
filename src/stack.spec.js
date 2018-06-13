@@ -1,13 +1,17 @@
 describe('Stack', () => {
 
     class Stack {
-      
-        getSize() {
-            return 0
+
+        constructor() {
+            this.size = 0
         }
 
-        push(){
-            
+        getSize() {
+            return this.size
+        }
+
+        push() {
+            this.size++
         }
 
     }

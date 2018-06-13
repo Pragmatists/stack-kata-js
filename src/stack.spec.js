@@ -12,19 +12,27 @@ describe('Stack', () => {
         }
 
         push() {
-            if (this.size === this.capacity) {
+            if (this.isFull()) {
                 throw Error('Stack overflow exception')
             }
             this.size++
         }
-
+        
+        
         pop() {
-            if (this.size === 0) {
+            if (this.isEmpty()) {
                 throw Error('Stack underflow exception')
             }
             this.size--
         }
+        
+        isFull() {
+            return this.size === this.capacity;
+        }
 
+        isEmpty() {
+            return this.size === 0;
+        }
     }
 
     let stack

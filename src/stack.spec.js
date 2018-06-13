@@ -13,9 +13,9 @@ describe('Stack', () => {
         push() {
             this.size++
         }
-        
+
         pop() {
-           
+           this.size--
         }
 
     }

@@ -16,13 +16,17 @@ describe('Stack', () => {
 
     }
 
+    let stack
+
+    beforeEach(() => {
+        stack = new Stack()
+    });
+
     it('should be empty when created', () => {
-        const stack = new Stack()
         expect(stack.getSize()).toEqual(0)
     });
 
     it('size after push is one', () => {
-        const stack = new Stack();
         stack.push("elem")
         expect(stack.getSize()).toEqual(1)
     });

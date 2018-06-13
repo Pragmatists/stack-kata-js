@@ -13,6 +13,10 @@ describe('Stack', () => {
         push() {
             this.size++
         }
+        
+        pop() {
+           
+        }
 
     }
 
@@ -29,6 +33,12 @@ describe('Stack', () => {
     it('size after push is one', () => {
         stack.push("elem")
         expect(stack.getSize()).toEqual(1)
+    });
+
+    it('is empty after push and pop', () => {
+        stack.push("elem")
+        stack.pop()
+        expect(stack.getSize()).toEqual(0)
     });
 
 

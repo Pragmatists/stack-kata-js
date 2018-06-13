@@ -15,7 +15,10 @@ describe('Stack', () => {
         }
 
         pop() {
-           this.size--
+            if (this.size === 0) {
+                throw Error('Stack underflow exception')
+            }
+            this.size--
         }
 
     }
